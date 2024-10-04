@@ -1,7 +1,7 @@
 a = int(input())
 l = 0
 for i in range(1, a+1):
-    l += i*i
+    l += i**3
 print(l)
 
 

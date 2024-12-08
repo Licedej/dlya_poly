@@ -1,3 +1,5 @@
+# № 1
+
 k, i = 0, 0
 n, m, l = [], [], []
 a = input()
@@ -18,8 +20,7 @@ print(a.replace('н', '!'))
 print(max(n))
 
 
-
-
+# № 2
 
 def func(text, b=0, i=0):
     if text[i] == '(':
@@ -32,6 +33,7 @@ text = input()
 print(text[func(text)])
 
 
+# № 3
 
 str = input()
  

@@ -39,7 +39,7 @@ co()
 def check(n):
     try:
         n = int(n)
-        if n > 0:
+        if n >= 0:
             return 1
         elif n < 0:
             return -1
@@ -47,17 +47,14 @@ def check(n):
         return -1
 
 def main():
-    flag = 1
-    while flag:
-        n = input('Введите натуральное число n : ')
-        strn = []
-        if check(n) == 1:
-            n = int(n)
-            for i in range(n+1):
-                if bin(i)[2:] == bin(i)[2:][::-1]:
-                    strn.append(str(i))
-            print(f'Числа палиндромы от 0 до {n} : ', ', '.join(strn), end = '.')
-        elif check(n) == -1:
-            print('Вводите НАТУРАЛЬНОЕ число. ')
-        flag = 0
+    n = input('Введите натуральное число n : ')
+    strn = []
+    if check(n) == 1:
+        n = int(n)
+        for i in range(n+1):
+            if bin(i)[2:] == bin(i)[2:][::-1]:
+                strn.append(str(i))
+        print(f'Числа палиндромы от 0 до {n} : ', ', '.join(strn))
+    elif check(n) == -1:
+        print('Вводите НАТУРАЛЬНОЕ число. ')
 main()

@@ -30,7 +30,6 @@ text = input()
 print(text[func(text)])
 
 
-
 # № 3
 
 str = input()
